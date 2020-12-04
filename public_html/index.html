@@ -9,42 +9,75 @@ and open the template in the editor.
         <title>Mademoiselle</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        
-        
+        <meta name="author" content="Buza Emil">
+        <meta name="description" content="home, about, services, blog">
+        <meta name="keywords" content="sass, lips, beauty">
+
+
         <!--ios compatibility-->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-title" content="Mademoiselle">
         <link rel="apple-touch-icon" href="apple-icon-144x144.png">
-        
-        
+
+
         <!--Android compatibility-->
-        
+
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="application-name" content="Mademoiselle">
         <link rel="icon" type="image/png" href="android-icon-192x192.png">
-        
-        
+
+
         <!--CSS FILES-->
-        
+
         <link href="css/theme.css" rel="stylesheet" type="text/css"/>
-        
-        
-        
+
+
+
     </head>
     <body>
-        
-        
-        
-        
-        
-        
-        
+
+        <header class="bg-white fixed-top py-2 py-lg-4">
+
+            <div class="container bg-white">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand d-block w-50" href="index.html">
+                        <img src="img/logo.png" alt=""/>
+                    </a>
+                    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link d-block text-uppercase" href="about.html">about <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active d-block text-uppercase" href="services.html">services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-block text-uppercase" href="blog.html">blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-block text-uppercase" href="contact.html">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div><!--,container end-->
+        </header><!--header end-->
+
+
+
+
+
+
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-        
+
         <!--font awesome icons-->
         <script src="https://kit.fontawesome.com/85bd05dd45.js"></script>
         <script src="js/main.js" type="text/javascript"></script>
