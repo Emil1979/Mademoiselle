@@ -1,3 +1,6 @@
+$base-font: $Lato;
+$title-font: $Bodoni;
+
 
 img{
     max-width: 100%;
@@ -6,3 +9,14 @@ img{
 html{
     font-size: 10px; // 1 rem
 }
+
+body{
+    font-family: $base-font;
+    color: $font-base-color;
+    font-weight: $header-font-weight;
+}
+
+h1, h2{
+    font-family: $title-font;
+}
+

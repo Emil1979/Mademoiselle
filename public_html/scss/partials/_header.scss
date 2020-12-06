@@ -1,14 +1,53 @@
 $navbar-toggler-bg: $primary;
 
 header{
+    padding: 31px 0;
     
     .navbar-toggler{
         span{
-        display: block;
-        width: 71px;
-        height: 1px;
-        background-color: $navbar-toggler-bg;
-        margin-bottom: 5px;
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: $navbar-toggler-bg;
+            margin-bottom: 5px;
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }/*navbar end*/
+
+    .navbar-nav{
+        a{
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            font-weight: $header-font-weight;
+            text-align: center;
+            padding: 10px;
+
+            &:first-of-type{
+                margin-top: 20px;
+            }
+        }
+    }
+}/*.header end*/
+
+@media(min-width:768px){
+    header{
+        .navbar-nav{
+            li{
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media(min-width:1200px){
+    header{
+        .navbar-nav{
+            li{
+                margin-left: 72px;
+            }
         }
     }
 }

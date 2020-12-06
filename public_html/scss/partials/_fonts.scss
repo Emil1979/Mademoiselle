@@ -1,2 +1,29 @@
 
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat&display=swap');
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+$Lato: 'Lato', sans-serif;
+$Bodoni: 'Bodoni 72';
+
+
+@font-face {
+    font-family:'Bodoni 72';
+    src: url('../fonts/Bodoni 72 Book.eot');
+    src: url('../fonts/Bodoni 72 Book.eot?#iefix') 
+        format('embedded-opentype'),
+        url('../fonts/Bodoni 72 Book.woff2') 
+        format('woff2'),
+        url('../fonts/Bodoni 72 Book.woff') 
+        format('woff'),
+        url('../fonts/Bodoni 72 Book.svg#Bodoni 72 Book') 
+        format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-0301;
+}

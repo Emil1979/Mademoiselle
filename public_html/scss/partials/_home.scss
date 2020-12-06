@@ -1,0 +1,23 @@
+
+
+.home-section{
+    padding-top: 218px;
+    height: 640px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 75px;
+    
+    
+    .home-title{
+        font-size: 60px !important;
+        line-height: 8.4rem !important;
+        letter-spacing: 2rem;
+        font-weight: $font-weight-light;
+        max-width: 70.3rem;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    
+}
