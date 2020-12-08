@@ -3,7 +3,14 @@ $lead-caption-bg: #FFFFFF;
 .lead-section{
     
     .lead-content{
-        
+        img{
+            display: block;
+            margin-right: 1.4rem;
+            
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
         
         .lead-title{
             width: 91.6rem;

@@ -1,0 +1,47 @@
+
+
+.profession{
+    margin-bottom: 6.7rem;
+
+    .profession-title{
+        margin-bottom: 1.11rem;
+
+        &:after{
+            content: '';
+            display: block;
+            width: 7.4rem;
+            height: 1px;
+            background-color: $hair-bg;
+            position: relative;
+            margin-top: 22px;
+        }
+    }
+
+    .member{
+        font-family: $base-font;
+        font-size: 3rem;
+        line-height: 2.7rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .profession-table{
+        border: 1px solid $hair-bg;
+        margin-top: 4.2rem;
+        h2{
+            margin-top: 8.5rem;
+        }
+    }
+
+    .profession-text{
+        line-height: 2.3rem;
+        font-weight: $font-weight-light;
+        max-width: 36.8rem;
+
+    }
+
+    .profession-img{
+        width: 36.8rem !important;
+        padding: 54px 95px;
+    }
+}
+
