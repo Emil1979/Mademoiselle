@@ -9946,7 +9946,7 @@ header .navbar-toggler span:last-of-type {
   margin-bottom: 0;
 }
 
-header .navbar-nav a {
+header .navbar-light .navbar-nav a {
   font-size: 1.4rem;
   line-height: 1.7rem;
   font-weight: 400;
@@ -9954,8 +9954,17 @@ header .navbar-nav a {
   padding: 10px;
 }
 
-header .navbar-nav a:first-of-type {
+header .navbar-light .navbar-nav a:first-of-type {
   margin-top: 20px;
+}
+
+header .navbar-light .navbar-nav .nav-link {
+  margin-bottom: 5px;
+  border-bottom: 1px solid transparent;
+}
+
+header .navbar-light .navbar-nav .nav-link:hover, header .navbar-light .navbar-nav .nav-link .active {
+  border-bottom: 1px solid #ECD9D9;
 }
 
 /*.header end*/
@@ -9989,6 +9998,7 @@ header .navbar-nav a:first-of-type {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
+  margin-bottom: 3.2rem;
 }
 
 .lead-section {
@@ -10103,56 +10113,6 @@ header .navbar-nav a:first-of-type {
 }
 
 /*service-section end*/
-.service-section {
-  margin-bottom: 11.1rem;
-}
-
-.service-section .service-title {
-  margin-bottom: 5.8rem;
-  letter-spacing: 5px;
-  line-height: 4.5rem;
-  font-size: 3rem;
-  margin-top: 5.6rem;
-}
-
-.service-section .service-info {
-  width: 36.8rem;
-  height: 13.2rem;
-  font-size: 3.6rem;
-  line-height: 4.4rem;
-  margin-top: 14.3rem;
-  margin-bottom: 3.6rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.service-section .lips, .service-section .makeup {
-  background-color: #F5F5F5;
-}
-
-.service-section .lips a, .service-section .makeup a {
-  padding: 13px 36px !important;
-  margin-left: 9.5rem;
-  font-size: 1.4rem;
-  background: transparent;
-  letter-spacing: 0.5px;
-  border: 1px solid #1E1E1E;
-}
-
-.service-section .hair, .service-section .wax {
-  background-color: #ECD9D9;
-}
-
-.service-section .hair a, .service-section .wax a {
-  padding: 13px 36px !important;
-  margin-left: 9.5rem;
-  font-size: 1.4rem;
-  background: transparent;
-  letter-spacing: 0.5px;
-  border: 1px solid #1E1E1E;
-}
-
-/*service-section end*/
 .profession {
   margin-bottom: 6.7rem;
 }
@@ -10167,7 +10127,6 @@ header .navbar-nav a:first-of-type {
   width: 7.4rem;
   height: 1px;
   background-color: #ECD9D9;
-  position: relative;
   margin-top: 22px;
 }
 
@@ -10194,22 +10153,69 @@ header .navbar-nav a:first-of-type {
 }
 
 .profession .profession-img {
-  width: 36.8rem !important;
   padding: 54px 95px;
 }
 
-footer a {
-  display: block;
+.menu {
+  padding: 46px 0 25px;
+  /*.social end*/
+}
+
+.menu .social a {
+  margin-bottom: 1.9rem;
+  color: #ECD9D9;
   margin-right: 3.3rem;
+  transition: 1s linear;
 }
 
-footer a:last-of-type {
-  margin-right: 0;
+.menu .social a:hover {
+  transform: rotate(360deg);
 }
 
-footer p {
+.menu p {
   margin-top: 1.9rem;
   margin-bottom: 2.5rem;
+}
+
+.menu-service-single {
+  margin-top: 7.9rem;
+  padding: 46px 0 25px;
+  /*.social end*/
+}
+
+.menu-service-single .social a {
+  margin-bottom: 1.9rem;
+  color: #ECD9D9;
+  margin-right: 3.3rem;
+  transition: 1s linear;
+}
+
+.menu-service-single .social a:hover {
+  transform: rotate(360deg);
+}
+
+.menu-service-single p {
+  margin-top: 1.9rem;
+  margin-bottom: 2.5rem;
+}
+
+.service-single-section {
+  padding-top: 170px;
+}
+
+.service-single-section .service-single-title {
+  line-height: 5rem;
+  font-size: 4.4rem;
+  font-size: "Lato", sans-serif;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+.service-single-section .service-single-description {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  margin-bottom: 18.1rem;
 }
 
 /*# sourceMappingURL=theme.css.map */

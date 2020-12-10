@@ -2,7 +2,7 @@ $navbar-toggler-bg: $primary;
 
 header{
     padding: 31px 0;
-    
+
     .navbar-toggler{
         span{
             display: block;
@@ -16,17 +16,27 @@ header{
             }
         }
     }/*navbar end*/
+    .navbar-light{
+        .navbar-nav{
+            a{
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                font-weight: $header-font-weight;
+                text-align: center;
+                padding: 10px;
 
-    .navbar-nav{
-        a{
-            font-size: 1.4rem;
-            line-height: 1.7rem;
-            font-weight: $header-font-weight;
-            text-align: center;
-            padding: 10px;
-
-            &:first-of-type{
-                margin-top: 20px;
+                &:first-of-type{
+                    margin-top: 20px;
+                }
+            }
+            .nav-link{
+                margin-bottom: 5px;
+                border-bottom: 1px solid transparent;
+            }
+            .nav-link{
+                &:hover,.active{
+                    border-bottom: 1px solid $navbar-toggler-bg;
+                }
             }
         }
     }

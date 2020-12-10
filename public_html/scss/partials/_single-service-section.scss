@@ -1,0 +1,19 @@
+
+.service-single-section{
+    padding-top: 170px;
+    
+    .service-single-title{
+        line-height: 5rem;
+        font-size: 4.4rem;
+        font-size: $base-font;
+        font-weight: $header-font-weight;
+        margin-bottom: 2.5rem;
+    }
+    
+    .service-single-description{
+        font-weight: $font-weight-light;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        margin-bottom: 18.1rem;
+    }
+}

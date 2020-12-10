@@ -1,11 +1,45 @@
-footer{
-    a{
-        display: block;
-        margin-right: 3.3rem;
-        &:last-of-type{
-            margin-right: 0;
+$social-text: #ECD9D9;
+
+.menu{
+    padding: 46px 0 25px;
+    .social{
+        a{
+            margin-bottom: 1.9rem;
+            color: $social-text;
+            margin-right: 3.3rem;
+            transition: 1s linear;
+            &:last-of-type{
+
+            }
+            &:hover{
+                transform: rotate(360deg);
+            }
         }
+    }/*.social end*/
+    p{
+        margin-top: 1.9rem;
+        margin-bottom: 2.5rem;
     }
+
+}
+
+.menu-service-single{
+    margin-top: 7.9rem;
+    padding: 46px 0 25px;
+    .social{
+        a{
+            margin-bottom: 1.9rem;
+            color: $social-text;
+            margin-right: 3.3rem;
+            transition: 1s linear;
+            &:last-of-type{
+
+            }
+            &:hover{
+                transform: rotate(360deg);
+            }
+        }
+    }/*.social end*/
     p{
         margin-top: 1.9rem;
         margin-bottom: 2.5rem;
