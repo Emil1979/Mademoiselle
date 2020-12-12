@@ -6049,7 +6049,7 @@ a.close.disabled {
 
 .carousel-item {
   position: relative;
-  display: none;
+  display: block;
   float: left;
   width: 100%;
   margin-right: -100%;
@@ -9958,12 +9958,12 @@ header .navbar-light .navbar-nav a:first-of-type {
   margin-top: 20px;
 }
 
-header .navbar-light .navbar-nav .nav-link {
+header .navbar-light .navbar-nav .nav-item {
   margin-bottom: 5px;
   border-bottom: 1px solid transparent;
 }
 
-header .navbar-light .navbar-nav .nav-link:hover, header .navbar-light .navbar-nav .nav-link .active {
+header .navbar-light .navbar-nav .nav-item:hover, header .navbar-light .navbar-nav .nav-item .active {
   border-bottom: 1px solid #ECD9D9;
 }
 
@@ -9978,6 +9978,10 @@ header .navbar-light .navbar-nav .nav-link:hover, header .navbar-light .navbar-n
   header .navbar-nav li {
     margin-left: 72px;
   }
+}
+
+main {
+  padding-bottom: 160px;
 }
 
 .home-section {
@@ -10005,21 +10009,24 @@ header .navbar-light .navbar-nav .nav-link:hover, header .navbar-light .navbar-n
   /*lead-content end*/
 }
 
-.lead-section .lead-content {
+.lead-section .lead-content a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #1E1E1E;
   /*lead-title end*/
   /*lead-caption end*/
 }
 
-.lead-section .lead-content img {
+.lead-section .lead-content a img {
   display: block;
   margin-right: 1.4rem;
 }
 
-.lead-section .lead-content img:last-of-type {
+.lead-section .lead-content a img:last-of-type {
   margin-right: 0;
 }
 
-.lead-section .lead-content .lead-title {
+.lead-section .lead-content a .lead-title {
   width: 91.6rem;
   height: 6.4rem;
   font-size: 3rem !important;
@@ -10028,7 +10035,7 @@ header .navbar-light .navbar-nav .nav-link:hover, header .navbar-light .navbar-n
   margin-bottom: 4.9rem !important;
 }
 
-.lead-section .lead-content .lead-caption {
+.lead-section .lead-content a .lead-caption {
   margin-right: auto;
   margin-left: auto;
   padding: 40.5px 0;
@@ -10042,7 +10049,7 @@ header .navbar-light .navbar-nav .nav-link:hover, header .navbar-light .navbar-n
   line-height: 2.4rem;
 }
 
-.lead-section .lead-content .lead-caption span {
+.lead-section .lead-content a .lead-caption span {
   display: block;
   font-style: italic;
   width: 8.1rem;
@@ -10052,12 +10059,12 @@ header .navbar-light .navbar-nav .nav-link:hover, header .navbar-light .navbar-n
   margin-right: auto;
 }
 
-.lead-section .lead-content .lead-caption .lead-text {
+.lead-section .lead-content a .lead-caption .lead-text {
   width: 27.6rem;
   height: 4.8rem;
 }
 
-.lead-section .lead-content img {
+.lead-section .lead-content a img {
   display: block;
   width: 100%;
 }
@@ -10065,6 +10072,11 @@ header .navbar-light .navbar-nav .nav-link:hover, header .navbar-light .navbar-n
 /*lead-section end*/
 .service-section {
   margin-bottom: 11.1rem;
+}
+
+.service-section img {
+  width: 100%;
+  height: 100%;
 }
 
 .service-section .service-title {
@@ -10140,20 +10152,33 @@ header .navbar-light .navbar-nav .nav-link:hover, header .navbar-light .navbar-n
 .profession .profession-table {
   border: 1px solid #ECD9D9;
   margin-top: 4.2rem;
+  min-height: 45.1rem;
 }
 
 .profession .profession-table h2 {
   margin-top: 8.5rem;
 }
 
-.profession .profession-text {
+.profession-text {
   line-height: 2.3rem;
   font-weight: 300;
   max-width: 36.8rem;
+  margin-bottom: 4rem;
 }
 
-.profession .profession-img {
-  padding: 54px 95px;
+@media (min-width: 992px) {
+  .profession-img {
+    padding: 54px 95px;
+  }
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  margin: 5px 9px;
+  background: #ECD9D9;
+  display: block;
+  opacity: 0.34;
 }
 
 .menu {
@@ -10216,6 +10241,142 @@ header .navbar-light .navbar-nav .nav-link:hover, header .navbar-light .navbar-n
   font-size: 1.8rem;
   line-height: 2.6rem;
   margin-bottom: 18.1rem;
+}
+
+.blog-section {
+  /*blog-content end*/
+}
+
+.blog-section .blog-content a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #1E1E1E;
+  /*lead-caption end*/
+}
+
+.blog-section .blog-content a img {
+  display: block;
+  margin-right: 1.4rem;
+  margin-top: 3.8rem;
+}
+
+.blog-section .blog-content a img:last-of-type {
+  margin-right: 0;
+}
+
+.blog-section .blog-content a .blog-caption {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40.5px 0;
+  z-index: 1;
+  position: relative;
+  margin-top: -81px;
+  width: 31.3rem;
+  height: 1.61rem;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+  line-height: 2.4rem;
+}
+
+.blog-section .blog-content a .blog-caption span {
+  display: block;
+  font-style: italic;
+  width: 8.1rem;
+  height: 1.7rem;
+  margin-bottom: 1.7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-section .blog-content a .blog-caption .blog-text {
+  width: 27.6rem;
+  height: 4.8rem;
+}
+
+.blog-section .blog-content a img {
+  display: block;
+  width: 100%;
+}
+
+/*blog-section end*/
+.blog-home-section {
+  padding: 95px 0;
+  height: 603px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  /*blog-home-content end*/
+}
+
+.blog-home-section .blog-home-info {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: left;
+}
+
+.blog-home-section .blog-home-info .blog-home-title {
+  font-family: "Lato", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2.6rem;
+}
+
+.blog-home-section .blog-home-info .category {
+  font-family: "Bodoni 72";
+  font-weight: 700;
+  line-height: 1.7rem;
+  letter-spacing: 1px;
+}
+
+.blog-home-section .blog-home-info .date-published {
+  font-family: "Bodoni 72";
+  font-style: italic;
+  line-height: 1.7rem;
+  letter-spacing: 1px;
+}
+
+.blog-home-section .blog-home-info .blog-home-description {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+/*blog-home-section end*/
+.blog-home-content {
+  padding-bottom: 27.3rem;
+}
+
+.blog-home-content img {
+  width: 100%;
+}
+
+.blog-home-content p {
+  margin-bottom: 3rem;
+  line-height: 2.6rem;
+}
+
+.blog-home-content .news-tags {
+  color: #1E1E1E;
+  font-family: "Bodoni 72";
+  line-height: 2.7rem;
+  margin-top: 4.1rem;
+}
+
+.blog-home-content .news-tags a {
+  text-transform: lowercase;
+}
+
+.blog-home-content .news-tags .tag-title {
+  font-style: italic;
+}
+
+/*.blog-home-content end*/
+.contact {
+  padding-top: 10.4rem;
+}
+
+.contact-section {
+  height: 56.1rem;
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 /*# sourceMappingURL=theme.css.map */

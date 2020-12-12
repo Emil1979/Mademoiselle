@@ -29,17 +29,30 @@
         h2{
             margin-top: 8.5rem;
         }
+        min-height: 45.1rem;
     }
 
-    .profession-text{
-        line-height: 2.3rem;
-        font-weight: $font-weight-light;
-        max-width: 36.8rem;
+}
 
-    }
+.profession-text{
+    line-height: 2.3rem;
+    font-weight: $font-weight-light;
+    max-width: 36.8rem;
+    margin-bottom: 4rem;
 
+}
+
+@media(min-width: 992px){
     .profession-img{
         padding: 54px 95px;
     }
 }
 
+.owl-theme .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+    margin: 5px 9px;
+    background: $primary;
+    display: block;
+    opacity: 0.34;
+}

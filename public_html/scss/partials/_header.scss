@@ -29,15 +29,16 @@ header{
                     margin-top: 20px;
                 }
             }
-            .nav-link{
+            .nav-item{
                 margin-bottom: 5px;
                 border-bottom: 1px solid transparent;
-            }
-            .nav-link{
-                &:hover,.active{
+                
+                &:hover, .active{
                     border-bottom: 1px solid $navbar-toggler-bg;
                 }
             }
+                
+            
         }
     }
 }/*.header end*/

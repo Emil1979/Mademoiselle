@@ -3,6 +3,10 @@ $lead-caption-bg: #FFFFFF;
 .lead-section{
     
     .lead-content{
+        a{
+            font-family: $base-font;
+            font-weight: $header-font-weight;
+            color: $font-base-color;
         img{
             display: block;
             margin-right: 1.4rem;
@@ -54,5 +58,6 @@ $lead-caption-bg: #FFFFFF;
             display: block;
             width: 100%;
         }
+    }
     }/*lead-content end*/
 }/*lead-section end*/
