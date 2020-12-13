@@ -9980,10 +9980,6 @@ header .navbar-light .navbar-nav .nav-item:hover, header .navbar-light .navbar-n
   }
 }
 
-main {
-  padding-bottom: 160px;
-}
-
 .home-section {
   padding-top: 218px;
   height: 640px;
@@ -10300,11 +10296,15 @@ main {
 
 /*blog-section end*/
 .blog-home-section {
-  padding: 95px 0;
-  height: 603px;
-  background-repeat: no-repeat;
-  background-position: right center;
-  /*blog-home-content end*/
+  padding-top: 16.5rem;
+  margin-bottom: 9.7rem;
+  /*blog-home-info end*/
+}
+
+.blog-home-section .blog-home-img {
+  display: block;
+  width: 100%;
+  margin-top: 4.4rem;
 }
 
 .blog-home-section .blog-home-info {
@@ -10377,6 +10377,63 @@ main {
   height: 56.1rem;
   background-repeat: no-repeat;
   background-position: top right;
+  margin-bottom: 11rem;
+  /*contact-description end*/
 }
+
+.contact-section .contact-description {
+  height: 56.1rem;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: left;
+}
+
+.contact-section .contact-description .contact-title {
+  font-size: 3rem;
+  line-height: 4.5rem;
+  letter-spacing: 5px;
+  margin-bottom: 1.1rem;
+}
+
+.contact-section .contact-description .form-group {
+  margin-bottom: 1.9rem;
+}
+
+.contact-section .contact-description .form-control {
+  display: block;
+  padding: 12px 7px 12px 19px;
+  line-height: 2.5rem;
+  letter-spacing: -0.23px;
+  font-weight: 300;
+  color: #1E1E1E;
+  background-color: rgba(37, 61, 97, 0.02);
+  height: 5rem;
+  border: none;
+}
+
+.contact-section .contact-description textarea.form-control {
+  height: 14.9rem;
+  resize: none;
+  margin-bottom: 5.9rem;
+}
+
+/*contact-section end*/
+.contact-info-section {
+  height: 25.5rem;
+  background-color: #ECD9D9;
+  padding: 6.3rem 0;
+}
+
+.contact-info-section p, .contact-info-section a {
+  font-weight: 300;
+  color: #1E1E1E;
+  font-size: 2.4rem;
+  line-height: 2.5rem;
+}
+
+.contact-info-section .address, .contact-info-section .tel {
+  margin-bottom: 1.5rem;
+}
+
+/*.contact-info-section end*/
 
 /*# sourceMappingURL=theme.css.map */

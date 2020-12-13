@@ -1,11 +1,15 @@
 
 
 .blog-home-section{
-    padding: 95px 0;
-    height: 603px;
-    background-repeat: no-repeat;
-    background-position: right center;
+    padding-top: 16.5rem;
+    margin-bottom: 9.7rem;
 
+    .blog-home-img{
+        display: block;
+        width: 100%;
+        margin-top: 4.4rem;
+    }
+    
     .blog-home-info{
         align-items: center;
         background: rgba($white, 0.8);
@@ -37,9 +41,11 @@
             line-height: 2.8rem;
         }
 
-    }/*blog-home-content end*/
-
+    }/*blog-home-info end*/
+    
 }/*blog-home-section end*/
+
+
 
 .blog-home-content{
     padding-bottom: 27.3rem;

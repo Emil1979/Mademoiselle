@@ -1,3 +1,6 @@
+
+
+
 .contact{
     padding-top: 10.4rem;
 }
@@ -7,4 +10,60 @@
     height: 56.1rem;
     background-repeat: no-repeat;
     background-position: top right;
-}
+    margin-bottom: 11rem;
+    
+    
+    .contact-description{
+        height: 56.1rem;
+        background: rgba($white, 0.8);
+        text-align: left;
+    
+    .contact-title{
+        font-size: 3rem;
+        line-height: 4.5rem;
+        letter-spacing: 5px;
+        margin-bottom: 1.1rem;
+    }
+    
+    .form-group{
+        margin-bottom: 1.9rem;
+    }
+    
+    .form-control{
+            display: block;
+            padding: 12px 7px 12px 19px;
+            line-height: 2.5rem;
+            letter-spacing: -0.23px;
+            font-weight: $font-weight-light;
+            color: $font-base-color;
+            background-color: rgba(#253D61, 0.02);
+            height: 5rem;
+            border: none;
+        
+    }
+    
+    textarea.form-control{
+        height: 14.9rem;
+        resize: none;
+        margin-bottom: 5.9rem;
+    }
+    
+    }/*contact-description end*/
+}/*contact-section end*/
+
+.contact-info-section{
+    height: 25.5rem;
+    background-color: $primary;
+    padding: 6.3rem 0;
+    
+    p, a{
+        font-weight: $font-weight-light;
+        color: $font-base-color;
+        font-size: 2.4rem;
+        line-height: 2.5rem;
+    }
+    
+    .address, .tel{
+        margin-bottom: 1.5rem;
+    }
+}/*.contact-info-section end*/
