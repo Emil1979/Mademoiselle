@@ -28,7 +28,7 @@
     cursor: default; }
 
 .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: -65px;
+    margin-top: -65px; 
     margin-left: 8rem;
 }
 

@@ -42,24 +42,15 @@ $(document).ready(function () {
         });
 
     }
-    
-        if ($('.blog-slider').length > 0) {
-        $('.blog-slider').owlCarousel({
 
-            loop: true,
-            autoplay: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    margin: 0
-                },
+    if ($('.blog-slider').length > 0) {
+        $('.blog-slider').bxSlider({
 
-                992: {
-                    items: 1,
-                    margin: 30
-                }
+            auto: true,
+            controls: true,
+            nextText: 'Next',
+            prevText: 'Prev'
 
-            }
         });
 
     }

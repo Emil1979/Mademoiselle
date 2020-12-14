@@ -10435,5 +10435,98 @@ header .navbar-light .navbar-nav .nav-item:hover, header .navbar-light .navbar-n
 }
 
 /*.contact-info-section end*/
+.lead-section {
+  padding: 91px 0;
+  /*lead-content end*/
+  /*lead-title end*/
+}
+
+.lead-section .lead-content a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #1E1E1E;
+  /*lead-caption end*/
+}
+
+.lead-section .lead-content a img {
+  display: block;
+  margin-top: 4.9rem;
+}
+
+.lead-section .lead-content a img:last-of-type {
+  margin-right: 0;
+}
+
+.lead-section .lead-content a .lead-caption {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40.5px 0;
+  z-index: 1;
+  position: relative;
+  margin-top: -81px;
+  width: 31.3rem;
+  height: 1.61rem;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+  line-height: 2.4rem;
+}
+
+.lead-section .lead-content a .lead-caption span {
+  display: block;
+  font-style: italic;
+  width: 8.1rem;
+  height: 1.7rem;
+  margin-bottom: 1.7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lead-section .lead-content a .lead-caption .lead-text {
+  width: 27.6rem;
+  height: 4.8rem;
+  margin-bottom: 1.9rem;
+}
+
+.lead-section .lead-content a img {
+  display: block;
+  width: 100%;
+}
+
+.lead-section .lead-title {
+  font-family: "Lato", sans-serif;
+  font-size: 4.4rem;
+  line-height: 5rem;
+  text-align: left;
+  width: 37.4rem;
+}
+
+.lead-section .lead-about-text {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: left;
+  margin-bottom: 2.9rem;
+}
+
+.lead-section .about-text {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.lead-section .about-img {
+  margin-bottom: 6.6rem;
+}
+
+.lead-section .form-control, .lead-section .input-group-append {
+  margin-bottom: 4.3rem;
+  height: 6.9rem;
+}
+
+.lead-section .fa-search {
+  padding-top: 3rem;
+  font-size: 1.7rem;
+}
+
+/*.lead-section end*/
 
 /*# sourceMappingURL=theme.css.map */
