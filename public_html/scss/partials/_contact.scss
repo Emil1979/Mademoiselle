@@ -66,4 +66,9 @@
     .address, .tel{
         margin-bottom: 1.5rem;
     }
+    
+    .error-msg{
+        color: $danger;
+        font-size: 1.3rem;
+    }
 }/*.contact-info-section end*/

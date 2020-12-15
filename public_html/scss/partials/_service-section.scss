@@ -2,6 +2,10 @@ $lip-bg: #F5F5F5;
 $lip-font: $base-font;
 $hair-bg: #ECD9D9;
 
+body{
+    text-align: left !important;
+}
+
 .service-section{
     margin-bottom: 11.1rem;
     img{
@@ -15,6 +19,15 @@ $hair-bg: #ECD9D9;
         line-height: 4.5rem;
         font-size: 3rem;
         margin-top: 5.6rem;
+        
+        &:after{
+            content: '';
+            display: block;
+            width: 7.4rem;
+            height: 1px;
+            background-color: $primary;
+            margin-bottom: 1.1rem;
+        }
     }
     
     .service-info{
@@ -24,16 +37,14 @@ $hair-bg: #ECD9D9;
         line-height: 4.4rem;
         margin-top: 14.3rem;
         margin-bottom: 3.6rem;
-        margin-left: auto;
-        margin-right: auto;
         
     }
     
     .lips, .makeup{
         background-color: $lip-bg;
+        padding: 143px 95px 143px 107px;
         a{
             padding: 13px 36px !important;
-            margin-left: 9.5rem;
             font-size: 1.4rem;
             background: transparent;
             letter-spacing: 0.5px;
@@ -43,9 +54,9 @@ $hair-bg: #ECD9D9;
     
     .hair, .wax{
         background-color: $hair-bg;
+        padding: 143px 95px 143px 107px;
         a{
             padding: 13px 36px !important;
-            margin-left: 9.5rem;
             font-size: 1.4rem;
             background: transparent;
             letter-spacing: 0.5px;

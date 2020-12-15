@@ -1,5 +1,9 @@
 $blog-caption-bg: #FFFFFF;
 
+body{
+    text-align: center;
+}
+
 .blog-section{
 
     .blog-content{
@@ -52,4 +56,11 @@ $blog-caption-bg: #FFFFFF;
         }
     }
     }/*blog-content end*/
+    
+    .bx-controls a{
+        color: $font-base-color !important;
+    }
+    
+
+    
 }/*blog-section end*/

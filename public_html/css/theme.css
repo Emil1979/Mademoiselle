@@ -9908,7 +9908,6 @@ font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  unicode-range: U+0020-0301;
 }
 
 img {
@@ -10002,14 +10001,31 @@ header .navbar-light .navbar-nav .nav-item:hover, header .navbar-light .navbar-n
 }
 
 .lead-section {
+  /*lead-title end*/
   /*lead-content end*/
+}
+
+.lead-section .lead-title {
+  width: 91.6rem !important;
+  height: 6.4rem;
+  font-size: 3rem !important;
+  line-height: 4.5rem;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+}
+
+.lead-section .lead-title:after {
+  content: '';
+  display: block;
+  width: 7.4rem;
+  height: 1px;
+  background-color: #ECD9D9;
 }
 
 .lead-section .lead-content a {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #1E1E1E;
-  /*lead-title end*/
   /*lead-caption end*/
 }
 
@@ -10020,15 +10036,6 @@ header .navbar-light .navbar-nav .nav-item:hover, header .navbar-light .navbar-n
 
 .lead-section .lead-content a img:last-of-type {
   margin-right: 0;
-}
-
-.lead-section .lead-content a .lead-title {
-  width: 91.6rem;
-  height: 6.4rem;
-  font-size: 3rem !important;
-  line-height: 4.5rem;
-  letter-spacing: 5px;
-  margin-bottom: 4.9rem !important;
 }
 
 .lead-section .lead-content a .lead-caption {
@@ -10066,6 +10073,10 @@ header .navbar-light .navbar-nav .nav-item:hover, header .navbar-light .navbar-n
 }
 
 /*lead-section end*/
+body {
+  text-align: left !important;
+}
+
 .service-section {
   margin-bottom: 11.1rem;
 }
@@ -10083,6 +10094,15 @@ header .navbar-light .navbar-nav .nav-item:hover, header .navbar-light .navbar-n
   margin-top: 5.6rem;
 }
 
+.service-section .service-title:after {
+  content: '';
+  display: block;
+  width: 7.4rem;
+  height: 1px;
+  background-color: #ECD9D9;
+  margin-bottom: 1.1rem;
+}
+
 .service-section .service-info {
   width: 36.8rem;
   height: 13.2rem;
@@ -10090,17 +10110,15 @@ header .navbar-light .navbar-nav .nav-item:hover, header .navbar-light .navbar-n
   line-height: 4.4rem;
   margin-top: 14.3rem;
   margin-bottom: 3.6rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .service-section .lips, .service-section .makeup {
   background-color: #F5F5F5;
+  padding: 143px 95px 143px 107px;
 }
 
 .service-section .lips a, .service-section .makeup a {
   padding: 13px 36px !important;
-  margin-left: 9.5rem;
   font-size: 1.4rem;
   background: transparent;
   letter-spacing: 0.5px;
@@ -10109,11 +10127,11 @@ header .navbar-light .navbar-nav .nav-item:hover, header .navbar-light .navbar-n
 
 .service-section .hair, .service-section .wax {
   background-color: #ECD9D9;
+  padding: 143px 95px 143px 107px;
 }
 
 .service-section .hair a, .service-section .wax a {
   padding: 13px 36px !important;
-  margin-left: 9.5rem;
   font-size: 1.4rem;
   background: transparent;
   letter-spacing: 0.5px;
@@ -10239,6 +10257,10 @@ header .navbar-light .navbar-nav .nav-item:hover, header .navbar-light .navbar-n
   margin-bottom: 18.1rem;
 }
 
+body {
+  text-align: center;
+}
+
 .blog-section {
   /*blog-content end*/
 }
@@ -10292,6 +10314,10 @@ header .navbar-light .navbar-nav .nav-item:hover, header .navbar-light .navbar-n
 .blog-section .blog-content a img {
   display: block;
   width: 100%;
+}
+
+.blog-section .bx-controls a {
+  color: #1E1E1E !important;
 }
 
 /*blog-section end*/
@@ -10432,6 +10458,11 @@ header .navbar-light .navbar-nav .nav-item:hover, header .navbar-light .navbar-n
 
 .contact-info-section .address, .contact-info-section .tel {
   margin-bottom: 1.5rem;
+}
+
+.contact-info-section .error-msg {
+  color: #dc3545;
+  font-size: 1.3rem;
 }
 
 /*.contact-info-section end*/

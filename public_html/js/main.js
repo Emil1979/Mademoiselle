@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
     //ANIMATION
@@ -22,6 +23,8 @@ $(document).ready(function () {
     });
     animation();
 
+//SLIDER-CAROUSEL
+
     if ($('.profession-slider').length > 0) {
         $('.profession-slider').owlCarousel({
 
@@ -43,13 +46,17 @@ $(document).ready(function () {
 
     }
 
+    //SLIDER-BXSLIDER
+
     if ($('.blog-slider').length > 0) {
         $('.blog-slider').bxSlider({
 
             auto: true,
             controls: true,
-            nextText: 'Next',
-            prevText: 'Prev'
+            nextText: '<i class="fas fa-angle-double-right"></i>',
+            prevText: '<i class="fas fa-angle-double-left"></i>',
+
+            wrapperClass: '.ext'
 
         });
 
@@ -59,3 +66,51 @@ $(document).ready(function () {
 
 });
 
+//form validate
+
+if ($('.contact-form').length > 0) {
+
+    $('.contact-form').validate({
+
+        highlight: function (element) {
+            $(element).addClass('is-invalid').removeClass('is-valid');
+        },
+        unhighlight: function (element) {
+            $(element).addClass('is-valid').removeClass('is-invalid');
+        },
+        rules: {
+            name: {
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            message: {
+                required: true
+            }
+        },
+        messages: {
+            name: {
+                required: 'The Name* field is required'
+            },
+            email: {
+                required: 'The Email* field is required',
+                email: 'Please provide a valid email address'
+            },
+            message: {
+                required: 'The Message* field is required'
+            }
+        },
+
+        errorElement: 'p',
+        errorPlacement: function (error, element) {
+            error.appendTo(element.closest(".form-group").find(".error-msg"));
+        }
+
+
+
+
+    });
+
+}
