@@ -50,13 +50,14 @@ $(document).ready(function () {
 
     if ($('.blog-slider').length > 0) {
         $('.blog-slider').bxSlider({
-
+            minSlides: 1,
+            maxSlides: 4,
+            tickerHover: true,
+            wrapperClass: '.ext',
             auto: true,
             controls: true,
-            nextText: '<i class="fas fa-angle-double-right"></i>',
-            prevText: '<i class="fas fa-angle-double-left"></i>',
-
-            wrapperClass: '.ext'
+            nextText: '<span>>></span>',
+            prevText: '<span><<</span>'
 
         });
 
